@@ -59,4 +59,24 @@ for layout, you can use display : inline-block
  it's best to use FLEXBOX, GRID, BOOTSTRAP
 
  ##FLEXBOX
- 
+ wrap the divs inside a container
+ target container and set display: flex
+ it has gap: 20px
+
+ everything in the flex container will fall in same line, irrespective
+ of the default display property of the HTML tag
+
+ eg <p> <img> are block, but they will be inline in the flex div.
+
+
+ display: flex -- this will occupy entire horizontal width
+ display: inline-flex -- h & w can be set
+
+Flex keeps adding everything in one line, no matter how many
+
+**li {
+      list-style: none;
+    }
+    this removes bullet from li
+
+** can create a responsive Navbar using flex and li, see index.html 9.0
