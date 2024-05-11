@@ -1,0 +1,28 @@
+Media queries
+Responsiveness 
+    Media queries
+    Grid
+    Flex
+    Bootstrap
+
+***************************************************
+Media queries
+
+@media(max-width: 600px) {
+    h1 {
+        color: blue;
+    }
+}
+
+what it means is for width <= 600px use the CSS inside @media
+
+can also use 
+@media (min-width: 600px) {
+    //css code
+}
+ this will target all screens above 600px width
+
+ ** can also combine
+    @media (min-width: 600px) and (max-width: 900px) {
+        //css for screens between 600px and 900px
+    }
