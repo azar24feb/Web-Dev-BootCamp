@@ -26,3 +26,37 @@ can also use
     @media (min-width: 600px) and (max-width: 900px) {
         //css for screens between 600px and 900px
     }
+
+in this way can combine other way also, 
+
+** @media screen (orientation:landscape) {
+    /* CSS for different orientation*/
+    NOT RECOMMENDED TO USE
+}
+
+** @media print (orientation:) {
+    //css layout for when the screen will be printed
+}
+
+
+#######################################3
+Retry the Project 52
+
+######################################
+FLEXBOX
+
+<table>
+    <tr>
+        <td>
+to create a table
+
+but this should not be used for layout. rather use it for data
+
+for layout, you can use display : inline-block
+
+ also can use float to decide layout
+
+ it's best to use FLEXBOX, GRID, BOOTSTRAP
+
+ ##FLEXBOX
+ 
