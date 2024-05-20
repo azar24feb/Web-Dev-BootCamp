@@ -14,13 +14,29 @@
 
     li {
       list-style: none;
+      background-color: aqua;
+    }
+
+    div{
+      padding: 10px;
+      background-color: gold;
+      border-radius: 5px;
     }
 
     .container {
       display: flex;
-      gap: 20px;
-      padding: 10px;
-      background-color: gold;
+      flex-direction: row;
+      gap: 5px;
+      flex-wrap: nowrap;
+      justify-content: center;
+      height: 70vh;
+      align-items: end;
+    }
+
+    .v {
+      align-self: flex-start;
+      text-align: center;
+      flex-basis: 100px;
     }
 
   </style>
@@ -28,14 +44,13 @@
 
 <body>
   <div class="container">
-    <p>Page Layout Methods</p>
-
-    <li><a href="./html-table.html">HTML Table</a></li>
-    <li><a href="./inline-block.html">Inline-Block</li>
-    <li><a href="./absolute-position.html">Absolute Positioning</li>
-    <li><a href="./float.html">Float</li>
-    <li><a href="./flex.html">Flexbox</li>
-
+    <div class="v" style="background-color: violet;">Violet</div>    
+    <div class="v" style="background-color: indigo;">Indigo</div>    
+    <div class="v" style="background-color: blue;">Blue</div>    
+    <div class="v1" style="background-color: green;">Green</div>    
+    <div class="v" style="background-color: yellow;">Yellow</div>    
+    <div class="v" style="background-color: orange;">Orange</div>    
+    <div class="v" style="background-color: red;">Red</div>    
   </div>
 </body>
 

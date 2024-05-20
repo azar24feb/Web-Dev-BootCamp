@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using FancyBox</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        // Initialize FancyBox
+        $('[data-fancybox="gallery"]').fancybox({
+            // You can add options here
+        });
+    </script>
+
+    <input type="number" id="numItems" placeholder="Enter number of items">
+    <button onclick="generateList()">Generate List</button>
+
+    <ul id="listContainer">
+        <!-- List items will be dynamically added here -->
+    </ul>
+
+    <!-- Add FancyBox CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script>
+        function generateList() {
+            var numItems = document.getElementById('numItems').value;
+            var listContainer = document.getElementById('listContainer');
+            listContainer.innerHTML = ''; // Clear previous list
+
+            for (var i = 1; i <= numItems; i++) {
+                var listItem = document.createElement('li');
+                var aTag = document.createElement('a');
+                //http://localhost:8000/hegre_anna_l/1%20%2810%29.jpg
+                aTag.setAttribute('href', 'http://localhost:8000/hegre_anna_l/1%20%28' + i + '%29.jpg');
+                aTag.setAttribute('data-fancybox', '');
+                aTag.setAttribute('data-fancybox', 'gallery');
+
+                var img = document.createElement('img');
+                img.setAttribute('src', 'myUrl/' + i + '.jpg');
+                img.setAttribute('loading', 'lazy');
+
+                aTag.appendChild(img);
+                listItem.appendChild(aTag);
+                listContainer.appendChild(listItem);
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
