@@ -80,3 +80,6 @@ Flex keeps adding everything in one line, no matter how many
     this removes bullet from li
 
 ** can create a responsive Navbar using flex and li, see index.html 9.0
+
+########################################
+########################################
